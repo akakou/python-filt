@@ -81,7 +81,6 @@ class BaseScanner:
 
         # output
         self._output(result)
-        sys.exit()
 
     def run(self):
         '''
@@ -100,6 +99,8 @@ class BaseScanner:
                 # scanner process to end
                 self.end()
                 self._end()
+                
+                return
 
             # scan
             is_hit, message = self.scan(target, signature)
