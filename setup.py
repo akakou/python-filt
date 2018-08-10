@@ -5,7 +5,7 @@ from distutils.core import setup
 
 setup(
     name='filt',
-    version='1.0.0',
+    version='0.1.0',
     packages=[
         'filt',
     ],
