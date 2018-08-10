@@ -14,7 +14,7 @@ class TestInheritancedScanner(unittest.TestCase):
 
     def test_scan_same(self):
         '''
-        test method for scan same data
+        Test method for scan same data
         '''
         # params
         param1 = 'Zml6eg=='
@@ -30,7 +30,7 @@ class TestInheritancedScanner(unittest.TestCase):
 
     def test_scan_different(self):
         '''
-        test method for scan different data
+        Test method for scan different data
         '''
         # params
         param1 = 'Zml6eg=='

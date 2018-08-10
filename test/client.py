@@ -24,7 +24,7 @@ class TestFiltClient(unittest.TestCase):
 
     def test_send_request(self):
         '''
-        test method for send filt some data
+        Test method for send filt some data
         '''
         # params
         target = "hello world"
@@ -38,7 +38,7 @@ class TestFiltClient(unittest.TestCase):
 
     def test_send_request_with_option(self):
         '''
-        test method for send filt some data with option
+        Test method for send filt some data with option
         '''
         # params
         target = "hello world"
@@ -53,7 +53,7 @@ class TestFiltClient(unittest.TestCase):
 
     def test_argument_error(self):
         '''
-        test method for check argument error
+        Test method for check argument error
         '''
         
         # params
