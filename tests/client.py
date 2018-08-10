@@ -3,16 +3,7 @@
 This is test code of filt client.
 '''
 
-import os, sys
 import unittest
-
-# import library which is 
-# at higher order directory (filt)
-path = os.path.dirname(os.path.abspath(__file__))
-path = path.split('/')
-path.pop()
-path = '/'.join(path)
-sys.path.append(path)
 
 from filt.client import FiltClient 
 

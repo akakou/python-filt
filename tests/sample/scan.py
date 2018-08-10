@@ -3,18 +3,6 @@
 This is the test case of scanner.
 '''
 
-import os, sys
-sys.path.append(os.getcwd())
-
-# import library which is 
-# at higher order directory (filt)
-path = os.path.dirname(os.path.abspath(__file__))
-path = path.split('/')
-path.pop()
-path.pop()
-path = '/'.join(path)
-sys.path.append(path)
-
 from filt.scanner import BaseScanner 
 
 
