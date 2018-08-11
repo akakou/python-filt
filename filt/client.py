@@ -76,8 +76,10 @@ class FiltClient:
 
         # decode message from base64
         self.result = json.loads(self.response.text)
-        self.result['message'] = self.result['message'].encode('utf-8')
-        self.result['message'] = base64.b64decode(self.result['message'])
-        self.result['message'] = self.result['message'].decode('utf-8')
+        
+        for index in range(len(self.result['message'])):
+            message = self.result['message'][index].encode('utf-8')
+            message = base64.b64decode(message)
+            self.result['message'][index] = message.decode('utf-8')
 
         return self.result

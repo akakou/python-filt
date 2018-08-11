@@ -9,7 +9,7 @@ from filt.client import FiltClient
 def main():
     # set param
     url = 'https://localhost:3000'
-    target = "hello world"
+    target = "this is the signature"
     option = {"hoge": "fuga"}
 
     # construct filt client
