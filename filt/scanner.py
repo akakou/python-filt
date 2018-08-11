@@ -39,6 +39,8 @@ class BaseScanner:
             # if data is empty,
             # filt call end
             return None
+        
+        print('\n')
 
         # decode from base64
         data = data.encode('utf-8')
@@ -59,7 +61,7 @@ class BaseScanner:
 
         # encode to base64
         data = data.encode('utf-8')
-        data = base64.b64encode(data).decode('utf-8')
+        data = base64.b64encode(data).decode('utf-8') + '\n'
 
         print(data)
 
@@ -69,12 +71,6 @@ class BaseScanner:
         and output data.
         '''
         result = self.result
-
-        # change bool to str
-        if result['hit']:
-            result['hit'] = 'true'
-        else:
-            result['hit'] = 'false'
 
         # dumps json
         result = json.dumps(result)
