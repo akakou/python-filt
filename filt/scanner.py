@@ -83,8 +83,8 @@ class BaseScanner:
         The main rootine of filt scanner.
         '''
         # input target
-        target = self._input()
-        self.ready(target)
+        self.target = self._input()
+        self.ready(self.target)
 
         while True:
             # input signature
@@ -99,7 +99,7 @@ class BaseScanner:
                 return
 
             # scan
-            is_hit, message = self.scan(target, signature)
+            is_hit, message = self.scan(self.target, signature)
 
             if is_hit:
                 # if signature hit,
